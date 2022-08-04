@@ -1,0 +1,450 @@
+/* 背景色を海にする */
+.whole_page_wrapeer {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(63, 134, 247);
+    overflow: hidden;
+}
+
+/* hackupのサインボードの位置設定 */
+.sign_board_img {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: -25%;
+    left: -5%;
+    z-index: 1;
+}
+
+.sign_board_img:hover {
+    transform: translateY(-7px)
+}
+
+/* sample,hintボードの位置設定 */
+.small_sign_board_wrapper {
+    display: flex;
+    position: absolute;
+    top: -90px;
+    right: 0;
+    z-index: 1;
+}
+
+/* sampleボードの大きさ */
+.small_sign_board_img {
+    width: 300px;
+    height: auto;
+}
+
+/* 共通のおか */
+.tall_hill {
+    position: absolute;
+    width: 80px;
+    height: auto;
+}
+
+/* 共通のキノコ */
+.kinoko {
+    position: absolute;
+    width: 100px;
+    z-index: 15;
+}
+
+/* hoverしたらぽよよん */
+.kinoko:hover {
+    animation: demo01 0.8s linear 0s 1;
+}
+
+@keyframes demo01 {
+    0% {
+        transform: scale(1.0, 1.0) translate(0%, 0%);
+    }
+
+    15% {
+        transform: scale(0.9, 0.9) translate(0%, 5%);
+    }
+
+    30% {
+        transform: scale(1.3, 0.8) translate(0%, 10%);
+    }
+
+    50% {
+        transform: scale(0.8, 1.3) translate(0%, -10%);
+    }
+
+    70% {
+        transform: scale(1.1, 0.9) translate(0%, 5%);
+    }
+
+    100% {
+        transform: scale(1.0, 1.0) translate(0%, 0%);
+    }
+}
+
+/* 共通のくも */
+.crowd {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    animation: crowd 50s linear 0s infinite;
+}
+
+@keyframes crowd {
+    0% {
+        transform: translate(-100%, 0%);
+    }
+
+    30% {
+        transform: translate(0%, 5%);
+    }
+
+    50% {
+        transform: translate(100%, 10%);
+    }
+
+    70% {
+        transform: translate(0, 5%);
+    }
+
+    100% {
+        transform: (-100%, 0%);
+    }
+}
+
+/* 共通の場所 */
+.place {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    z-index: 10;
+}
+/* 共通の道 */
+.road {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    z-index: 10;
+}
+
+/* 共通の土管 */
+.clay_pipe {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    z-index: 11;
+}
+
+.clay_pipe:hover {
+    animation: demo01 0.8s linear 0s 1;
+}
+
+/* 共通の旗 */
+.heart {
+    position: absolute;
+    width: 180px;
+    cursor: pointer;
+    z-index: 10;
+    animation: demo01 0.8s linear 0s 1;
+}
+/* 島１ */
+.island_1_wrapper {
+    position: relative;
+    top: 22%;
+    left: 5%;
+    z-index: 1;
+}
+
+/* 島の大きさと位置 */
+.island_1 {
+    position: absolute;
+    width: 400px;
+    height: auto;
+}
+
+/* 島の要素たち */
+.place_1 {
+    top: -50px;
+    left: 5%;
+}
+
+.kinoko_orange {
+    width: 150px;
+    top: -17px;
+    left: 103px;
+}
+
+.road_1 {
+    left: 75px;
+    top: 25px;
+}
+
+.pipe_1 {
+    left: 140px;
+    top: 170px;
+}
+
+.heart_1-1 {
+    left: 180px;
+    top: -70px;
+}
+.heart_1-2 {
+    top: 65px;
+    left: 15px;
+}
+
+/* 島２ */
+.island_2_wrapper {
+    position: relative;
+    top: 40%;
+    left: 10%;
+    z-index: 1;
+}
+
+.island_2 {
+    position: absolute;
+    width: 500px;
+    height: auto;
+}
+
+.tall_hill_2 {
+    top: 230px;
+    left: 240px;
+}
+
+.crowd_2-1 {
+    top: 220px;
+    left: 280px;
+    z-index: 1;
+}
+
+.place_2 {
+    top: 170px;
+    left: 80px;
+}
+
+.kinoko_pink {
+    width: 150px;
+    top: 200px;
+    left: 107px;
+}
+.heart_2 {
+    top: 137px;
+    left: 20px;
+}
+
+/* 島３ 真ん中*/
+.island_3_wrapper {
+    position: relative;
+    top: 20%;
+    left: 35%;
+    z-index: 1;
+}
+
+/* 島の大きさと位置 */
+.island_3 {
+    position: absolute;
+    top: 0;
+    width: 650px;
+    height: auto;
+}
+
+/* 島の要素たち */
+.ladder {
+    position: absolute;
+    width: 400px;
+    top: 50px;
+    left: 165px;
+}
+
+.tall_hill_3 {
+    top: 200px;
+    left: 400px;
+    z-index: 1;
+}
+
+.crowd_3-1 {
+    top: 155px;
+    left: 430px;
+    z-index: 0;
+}
+
+.crowd_3-2 {
+    top: 195px;
+    left: 380px;
+    z-index: 2;
+}
+
+.kinoko_green {
+    top: 65px;
+    left: 292px;
+}
+.heart_3 {
+    top: -40px;
+    left: 295px;
+}
+
+/* 島４ 右下*/
+.island_4_wrapper {
+    position: relative;
+    top: 50%;
+    left: 77%;
+    z-index: 1;
+}
+
+.island_4 {
+    position: absolute;
+    width: 400px;
+    height: auto;
+}
+
+/* 島の要素たち */
+.place_4 {
+    top: -50px;
+    left: 75px;
+}
+
+.kinoko_yellow {
+    width: 150px;
+    top: -15px;
+    left: 103px;
+}
+.heart_4 {
+    top: -90px;
+    left: 160px;
+}
+
+/* 島５ 右上*/
+.island_5_wrapper {
+    position: relative;
+    top: -17%;
+    left: 57%;
+    z-index: 1;
+}
+
+.island_5 {
+    position: absolute;
+    width: 500px;
+    height: auto;
+
+}
+.heart_5 {
+    top: 100px;
+    left: 280px;
+}
+
+/* 島の要素たち */
+.place_5 {
+    top: 160px;
+    left: 12%;
+}
+
+.kinoko_blue {
+    width: 150px;
+    top: 190px;
+    left: 210px;
+}
+
+/* 島６ 湖つき*/
+.island_6_wrapper {
+    position: relative;
+    top: -15%;
+    left: 25%;
+    z-index: 1;
+}
+
+/* 島の大きさと位置 */
+.island_6 {
+    position: absolute;
+    width: 600px;
+    height: auto;
+}
+/* 島の要素たち */
+.kinoko_purple {
+    width: 150px;
+    top: 135px;
+    left: 280px;
+}
+
+.pipe_6 {
+    top: 345px;
+    left: 86px;
+}
+.heart_6-1 {
+    top: 60px;
+    left: 190px;
+}
+.heart_6-2 {
+    top: 230px;
+    left: 0px;
+}
+
+.wave_wrapper {
+    display: flex;
+    background-image: url(../images/wavy.PNG);
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    z-index: 0;
+}
+
+.wave_1 {
+    top: 30vh;
+    left: 2vw;
+    animation: wave_right 20s linear 0s infinite;
+}
+.wave_2 {
+    top: 35vh;
+    right: 10vw;
+    animation: wave_left 20s linear 0s infinite;
+}
+
+@keyframes wave_right {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    15% {
+        transform: translate(5%, 4%);
+    }
+
+    30% {
+        transform: translate(10%, 0%);
+    }
+
+    50% {
+        transform: translate(15%, 0%);
+    }
+
+    70% {
+        transform: translate(10%, 4%);
+    }
+
+    100% {
+        transform: (5%, 0%);
+    }
+}
+
+@keyframes wave_left {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    15% {
+        transform: translate(-1%, 4%);
+    }
+
+    30% {
+        transform: translate(-3%, 0%);
+    }
+
+    50% {
+        transform: translate(-5%, 0%);
+    }
+
+    70% {
+        transform: translate(-3%, 4%);
+    }
+
+    100% {
+        transform: (-1%, 0%);
+    }
+}
